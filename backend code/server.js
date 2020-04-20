@@ -11,11 +11,11 @@ app.use(express.json());
 app.use(express.static('../public'));
 //routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/html/index.html'));
+    res.sendFile(path.join(__dirname, './public/html/index.html'));
   });
 
   app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/html/noted.html'));
+    res.sendFile(path.join(__dirname, './public/html/noted.html'));
   });
 
   //json to retreave notes
