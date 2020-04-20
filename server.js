@@ -35,7 +35,7 @@ app.post(`/api/notes`, (req, res) => {
   fs.writeFile(path.join(__dirname, './data/data.json'), notes, err => {
     if (err) throw err;
     
-  };
+  });
   JSON.stringify(data);
   res.json(data);
 });
